@@ -1,0 +1,159 @@
+.nav {
+	width: $width;
+	height: 5.4rem;
+	margin: 0 auto;
+    display: flex;
+    align-items: center;
+	background-color: $color-black;
+    position: relative;
+    &>* {
+        text-transform: uppercase;
+    }
+
+    &-content, &-contact {
+        display: flex;
+        height: 5.4rem;
+        
+        align-items: center;
+    }
+
+    &-link {
+        color: $color-white;
+        text-decoration: none;
+
+        outline: none;
+    }
+
+    &-department{
+    	width: 27rem;
+    	height: 5.4rem;
+    	font-size: 1.4rem;
+    	font-weight: inherit;
+    	padding: 1.5rem;
+    	color: $color-black;
+    	background-color: $color-secondary-light;
+    	display: flex;
+    	align-items: center;
+    	&>span{
+    		margin-right: auto;
+    	}
+
+    	.drop-icon{
+			width: 1.4rem;
+			height: 1.1rem;
+    	}
+    }
+
+    &-content{
+    	width: 61rem;
+    	padding: 1.5rem 2.5rem;
+    	justify-content: space-around;
+    	margin-right: auto;
+    }
+
+    &-contact{
+    	margin-right: 1rem;
+
+    	&__phone{
+    		color: $color-black;
+    		padding: 0 .2rem;
+    		background-color: $color-secondary-light;
+    		border-radius: .2rem;
+    		margin-left: .5rem;
+    	}
+
+    	&__text{
+    		color: $color-grey-dark-2;
+    	}
+    }
+
+    &-menu{
+        color: $color-black;
+        margin: 0 auto;
+        position: absolute;
+        top: 5.4rem ;
+        left: 0;
+        background: transparent;
+
+        display: flex;
+
+        &__category{
+            width: 27rem;
+            background-color: $color-white;
+        }
+
+        &__list{
+            list-style-type: none;
+            border-left: $line;
+            border-bottom: $line;
+            border-right: $line;
+        }
+
+        &__item{
+            height: 4.9rem;
+            display: flex;
+            align-items: center;
+            padding: 1.8rem;
+
+            &:not(:last-child){
+                border-bottom: $line;
+            }
+        }
+
+        &__icon{
+            width: 1.4rem;
+            height: 1.3rem;
+            margin-right: 1rem;
+            font-weight: 700;
+        }
+
+        &__mega{
+            display: none;
+            width: 100rem;
+            height: 34rem;
+            text-transform: none;
+            box-shadow: 0 .2rem 1rem rgba(0,0,0, 0.2);
+            position: absolute;
+            top:0;
+            left: 34.5rem;
+            background-color: $color-white;
+            z-index: 1;
+
+            &-title{
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                font-weight: 700;
+            }
+
+            &-list{
+                list-style-type: none;
+                & > li{
+                    padding: 1rem 0;
+                }
+            }
+
+            &-item{
+                flex:25%;
+                padding: 3rem;
+
+                &:not(:last-child){
+                    border-right: $line;
+                }
+            }
+
+            &-ad{
+                height: 29.9rem;
+                width: 21.1rem;
+                position: cover;
+            }
+
+            &:hover{
+                display: flex;
+            }
+        }
+    }
+
+    &-content:hover ~ &-menu &-menu__mega{
+        display: flex;
+    }
+}

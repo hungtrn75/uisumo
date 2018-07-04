@@ -1,0 +1,14 @@
+{
+  "name": "uisumo",
+  "version": "1.0.0",
+  "description": "training css",
+  "main": "index.js",
+  "scripts": {
+    "devserver": "live-server"
+  },
+  "keywords": [
+    "uisumo"
+  ],
+  "author": "hungtrn75",
+  "license": "ISC"
+}

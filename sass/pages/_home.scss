@@ -1,0 +1,14 @@
+.card-banner {
+    width: $width;
+    margin: 0 auto;
+    height: 49.1rem;
+    padding-left: 29.1rem;
+    position: relative;
+    padding-top:2.1rem;
+
+    &__image{
+    	width: 85rem;
+    	height: 47rem;
+    	background-repeat: no-repeat;
+    }
+}

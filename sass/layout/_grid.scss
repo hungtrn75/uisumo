@@ -1,0 +1,13 @@
+.row {
+	display: flex;
+	align-items: center;
+}
+
+.col{
+	&-1-of-4{
+		flex:25%;
+	}
+	&-1-of-3{
+		flex:1/3;
+	}
+}
