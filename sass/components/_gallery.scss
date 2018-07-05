@@ -1,0 +1,12 @@
+.ad{
+	display: flex;
+	justify-content: space-between;
+	height: 20.9rem;
+
+	&__item{
+		width: 36.7rem;
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-radius: .2rem;
+	}
+}
