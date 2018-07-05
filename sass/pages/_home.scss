@@ -39,7 +39,7 @@
     text-align: center;
     border: $line;
 
-    &__title {
+    &__title{
         display: flex;
         width: 26.3rem;
         height: 5rem;
@@ -63,6 +63,12 @@
     &__detail {
         width: 26.3rem;
         height: 33rem;
+
+    }
+
+    &__name{
+    	font-size: 1.4rem;
+    	font-weight: 400;
     }
 
     &__product {
@@ -154,7 +160,6 @@
     	font-size: 1.2rem;
     	font-weight: 400;
     	font-family: "Roboto", sans-serif;
-    	margin-top: 2.2rem;
     }
 
     &-action{
@@ -187,4 +192,127 @@
     		}
     	}
     }
+}
+
+.new-product{
+	width: 26.5rem;
+	height: 66rem;
+	border:$line;
+
+	&__title{
+		width: 26.3rem;
+		height: 5rem;
+		background-color: $color-grey-dark-3;
+		font-size: 1.4rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 1.4rem 3rem;
+	}
+
+	&__list{
+		width: 26.3rem;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__item{
+		width:26.3rem;
+		height: 10.2rem;
+		flex: 1;
+		display: flex;
+		align-items: center;
+
+
+		&:not(:last-child){
+			border-bottom: $line;
+		}
+	}
+	
+	.wrap{
+		width:9rem;
+		padding: 3.4rem 0;
+		text-align: center;
+	}
+}
+
+.box-adv{
+	width: 26.5rem;
+	height: 34rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.user{
+	width: 26.5rem;
+	border: $line;
+	font-family: "Raleway", sans-serif;
+	text-align: center;
+
+	&-title{
+		font-weight: 600;
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		padding: 1.4rem;
+		color: $color-white;
+		height: 5rem;
+		background-color: $color-primary;
+	}
+
+	&-comment{
+		padding: 3.1rem 0;
+		position: relative;
+
+		&__content{
+			line-height: 2.2rem;
+			padding: 0 2.8rem;
+		}
+	}
+
+	&-info{
+		padding-top: 2.2rem;
+	}
+
+	&-avata{
+		width: 6.4rem;
+		height: 6.4rem;
+		border-radius: 50%;
+		border: 1px solid transparent;
+	}
+
+	&-name{
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+
+	.swiper-pagination{
+		height: 6.9rem;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&::before{
+			content:"";
+			position: absolute;
+			height: .1rem;
+			width: 23rem;
+			background-color: rgba(0,0,0, 0.2);
+			left: 1.8rem;
+			top: 0;
+		}
+
+		&__bullet{
+			width: .7rem;
+			height: .7rem;
+			border-radius: 50%;
+			background-color: $color-grey-dark-2;
+			&:not(:last-child){
+				margin-right: .9rem;
+			}
+
+			&-active{
+				background-color: $color-primary;
+			}
+		}
+	}
 }
