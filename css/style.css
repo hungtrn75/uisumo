@@ -164,7 +164,7 @@ body {
 .content .search-box__button {
   height: 100%;
   width: 100%;
-  background: #ffd202 url(../../img/home/search-icon.png) 50% no-repeat;
+  background: #ffd202 url(/img/home/search-icon.png) 50% no-repeat;
   background-size: 1.3rem;
   cursor: pointer;
   border-top-right-radius: .3rem;
