@@ -1,0 +1,277 @@
+.item {
+    width: 84rem;
+
+    &__title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-right: auto;
+    }
+
+    &-arrival,
+    &-seller {
+        height: 3rem;
+        text-transform: uppercase;
+
+
+        &__type {
+            color: $color-grey-dark;
+            text-decoration: none;
+            outline: none;
+        }
+
+        &__division {
+            width: 42rem;
+            justify-content: space-evenly;
+        }
+    }
+
+    &-list {
+        margin-top: 2rem;
+        border: $line;
+        height: 33rem;
+        z-index: 2;
+
+        &__seller {
+            flex-wrap: wrap;
+            height: 63rem;
+            margin-top: 2rem;
+            border: $line;
+        }
+    }
+
+    &-unit {
+        height: 33rem;
+        position: relative;
+        text-align: center;
+        &:hover {
+            box-shadow: $shadow-box;
+            .item-action {
+                display: flex;
+            }
+        }
+        &:not(:last-child) {
+            border-right: $line;
+        }
+
+        &>.image {
+            margin: 1px;
+            text-align: center;
+        }
+    }
+
+    &-image {
+        max-width: 20.4rem;
+        height: 22.6rem;
+    }
+
+    &-detail {
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-family: "Roboto", sans-serif;
+    }
+
+    &-action {
+        display: none;
+        position: absolute;
+        height: 3.3rem;
+        width: 100%;
+        left: 0;
+        bottom: 10.4rem;
+        z-index: 3;
+        border-top: $line;
+        border-bottom: $line;
+        background-color: $color-white;
+
+        &__unit {
+            height: 100%;
+            padding: .7rem;
+            text-align: center;
+
+            &:not(:last-child) {
+                border-right: $line;
+            }
+
+            &:first-child {
+                background-color: $color-primary;
+            }
+
+            &:hover {
+                box-shadow: $shadow-box;
+            }
+        }
+    }
+
+    &-seller__best {
+        width: 41.9rem;
+        height: 21rem;
+        display: flex;
+        &:not(:nth-child(n+5)) {
+            border-bottom: $line;
+        }
+
+        &>.box-image {
+            width: 21rem;
+            height: 21rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &:nth-child(even) {
+            border-left: $line;
+        }
+    }
+}
+
+.hot-deal__title,
+.recent-news__title {
+    display: flex;
+    width: 26.3rem;
+    height: 5rem;
+    align-items: center;
+    background-color: $color-grey-dark-3;
+
+    &>h1 {
+        font-style: "Raleway", sans-serif;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-left: 3rem;
+        margin-right: auto;
+    }
+}
+
+
+.hot-deal__next,
+.recent-news__next {
+    margin-right: .8rem;
+}
+
+.hot-deal {
+    width: 26.5rem;
+    text-align: center;
+    border: $line;
+
+    &__detail {
+        width: 26.3rem;
+        height: 33rem;
+    }
+
+    &__name {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
+    &__product {
+        width: 11.3rem;
+        height: 18rem;
+        margin-top: 2.5rem;
+        margin-bottom: 4rem;
+    }
+
+    &__timer {
+        width: 26.3rem;
+        height: 6rem;
+        display: flex;
+        border-top: $line;
+        line-height: 1.4;
+        &-item {
+            flex: 1;
+            height: 6rem;
+            padding: 1.4rem;
+            &:not(:last-child) {
+                border-right: $line;
+            }
+        }
+
+        &-count {
+            font-weight: 700;
+        }
+    }
+}
+
+
+.new-product {
+    width: 26.5rem;
+    height: 66rem;
+    border: $line;
+
+    &__title {
+        width: 26.3rem;
+        height: 5rem;
+        background-color: $color-grey-dark-3;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 1.4rem 3rem;
+    }
+
+    &__list {
+        width: 26.3rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        width: 26.3rem;
+        height: 10.2rem;
+        display: flex;
+        align-items: center;
+
+
+        &:not(:last-child) {
+            border-bottom: $line;
+        }
+    }
+
+    .wrap {
+        width: 9rem;
+        padding: 3.4rem 0;
+        text-align: center;
+    }
+}
+
+.recent-news {
+    width: 26.5rem;
+    height: 38.6rem;
+    border: $line;
+    
+    &__detail{
+        padding: 1.5rem 1.9rem;
+    }
+
+    &__post-title{
+        font-size: 1.4rem;
+        margin-top: 1.3rem;
+        margin-bottom: .3rem;
+    }
+
+    &__image{
+        width: 100%;
+        background-size: cover;
+    }
+
+    .list-inline{
+        list-style-type: none;
+
+        &>li{
+            display: inline-block;
+            padding-right: .8rem;
+            height: 2rem;
+
+            &>a{
+                text-decoration: none;
+                color: $color-black;
+            }
+
+            &:first-child{
+                border-right: $line;
+                margin-right: .8rem;
+            }
+        }
+    }
+
+    .snippet{
+            margin: 1.7rem 0;
+    }
+}
