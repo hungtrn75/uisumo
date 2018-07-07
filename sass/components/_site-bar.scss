@@ -1,10 +1,14 @@
 .site-bar{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	height: 4.2rem;
 	width: 100vw;
 	padding: 0 calc((100vw - 1141px)/2);
 	margin: 0 auto;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	background-color: $color-primary-dark;
 	font-size: 1.2rem;
 
@@ -46,6 +50,11 @@
 		background-color: $color-primary-light;
 		padding-top: .25rem;
 		margin-left: 2rem; 
+
+		&:hover{
+			-webkit-box-shadow: $shadow-box;
+			        box-shadow: $shadow-box;
+		}
 	}
 
 	&__lang{
@@ -55,8 +64,12 @@
 
 	&__wishlist{
 		width: 10.4rem;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		padding-left:1.8rem;
 		margin-left: 2rem;
 		.wishlist-icon {

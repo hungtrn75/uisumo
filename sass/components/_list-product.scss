@@ -17,11 +17,18 @@
             color: $color-grey-dark;
             text-decoration: none;
             outline: none;
+
+            &:hover{
+                -webkit-box-shadow: $shadow-box;
+                        box-shadow: $shadow-box;
+            }
         }
 
         &__division {
             width: 42rem;
-            justify-content: space-evenly;
+            -webkit-box-pack: space-evenly;
+                -ms-flex-pack: space-evenly;
+                    justify-content: space-evenly;
         }
     }
 
@@ -32,7 +39,8 @@
         z-index: 2;
 
         &__seller {
-            flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
             height: 63rem;
             margin-top: 2rem;
             border: $line;
@@ -44,8 +52,11 @@
         position: relative;
         text-align: center;
         &:hover {
-            box-shadow: $shadow-box;
+            -webkit-box-shadow: $shadow-box;
+                    box-shadow: $shadow-box;
             .item-action {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
             }
         }
@@ -76,7 +87,7 @@
         height: 3.3rem;
         width: 100%;
         left: 0;
-        bottom: 10.4rem;
+        bottom: 10.3rem;
         z-index: 3;
         border-top: $line;
         border-bottom: $line;
@@ -96,7 +107,8 @@
             }
 
             &:hover {
-                box-shadow: $shadow-box;
+                -webkit-box-shadow: $shadow-box;
+                        box-shadow: $shadow-box;
             }
         }
     }
@@ -104,6 +116,8 @@
     &-seller__best {
         width: 41.9rem;
         height: 21rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         &:not(:nth-child(n+5)) {
             border-bottom: $line;
@@ -112,9 +126,15 @@
         &>.box-image {
             width: 21rem;
             height: 21rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
         }
 
         &:nth-child(even) {
@@ -125,10 +145,14 @@
 
 .hot-deal__title,
 .recent-news__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 26.3rem;
     height: 5rem;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: $color-grey-dark-3;
 
     &>h1 {
@@ -172,11 +196,15 @@
     &__timer {
         width: 26.3rem;
         height: 6rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         border-top: $line;
         line-height: 1.4;
         &-item {
-            flex: 1;
+            -webkit-box-flex: 1;
+                -ms-flex: 1;
+                    flex: 1;
             height: 6rem;
             padding: 1.4rem;
             &:not(:last-child) {
@@ -208,15 +236,24 @@
 
     &__list {
         width: 26.3rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     &__item {
         width: 26.3rem;
         height: 10.2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
 
 
         &:not(:last-child) {

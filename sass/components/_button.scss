@@ -17,8 +17,8 @@
 
     &-status {
         position: absolute;
-        top: 1rem;
-        left: 1rem;
+        top: 1.2rem;
+        left: 1.2rem;
         z-index: 2;
         display: inline-block;
         padding: .2rem;
@@ -74,5 +74,28 @@
         &:hover::after{
             display: inline;
         }
+    }
+
+    &:hover{
+        -webkit-box-shadow: $shadow-box;
+                box-shadow: $shadow-box;
+    }
+
+    &-email{
+        height: 4.6rem;
+        width: 10rem;
+        background-color: $color-secondary-light;
+        border: none;
+        outline: none;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
     }
 }
