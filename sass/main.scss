@@ -7,15 +7,15 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/_site-bar";
-@import "components/_header-content";
-@import "components/_header-nav";
+@import "components/site-bar";
+@import "components/header-content";
+@import "components/header-nav";
 
-@import "components/_gallery";
-@import "components/_star";
-@import "components/_button";
-@import "components/_list-product";
-@import "components/_icon";
+@import "components/gallery";
+@import "components/star";
+@import "components/button";
+@import "components/list-product";
+@import "components/icon";
 
 @import "layout/footer";
 @import "layout/grid";
@@ -23,4 +23,6 @@
 @import "layout/navigation";
 
 @import "pages/home";
+@import "pages/shop";
+
 

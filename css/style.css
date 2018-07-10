@@ -43,6 +43,10 @@ body {
   margin-top: 8.4rem !important;
 }
 
+.u-margin-bottom-large {
+  margin-bottom: 8.4rem !important;
+}
+
 .u-margin-top-medium {
   margin-top: 4rem !important;
 }
@@ -68,13 +72,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 4.2rem;
-  width: 100vw;
-  padding: 0 calc((100vw - 1141px)/2);
+  width: 114.1rem;
   margin: 0 auto;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #3b83d5;
   font-size: 1.2rem;
 }
 .site-bar > * {
@@ -529,6 +531,18 @@ body {
 .btn-add {
   width: 10.1rem;
 }
+.btn-add-product {
+  display: inline-block;
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+  background: url(../img/home/icon/btn-add.png) 50% 50% no-repeat #eeeeee;
+  background-size: .8rem .8rem;
+  position: absolute;
+  top: 1.1rem;
+  right: 1rem;
+  border: 1px solid #e5e5e5;
+}
 .btn-select, .btn-add {
   height: 3.3rem;
   padding: 1rem 0;
@@ -618,6 +632,7 @@ body {
 }
 .item-unit {
   height: 33rem;
+  flex: 25%;
   position: relative;
   text-align: center;
 }
@@ -932,6 +947,7 @@ body {
 
 .footer {
   width: 100%;
+  min-width: 114.1rem;
   background-color: #f8f8f8;
 }
 .footer-inner {
@@ -1143,11 +1159,16 @@ body {
 header {
   height: 20.2rem;
   width: 100vw;
+  min-width: 114.1rem;
   background-color: #408ce2;
   background-size: cover;
   background-position: top;
   position: relative;
   border: none;
+}
+header .wrap {
+  background-color: #3b83d5;
+  min-width: 114.1rem;
 }
 
 .card-banner {
@@ -1358,4 +1379,74 @@ header {
 }
 .list-partner li:not(:last-child) {
   border-right: 1px solid #e5e5e5;
+}
+
+.shop {
+  color: #333333;
+  background-color: #ffffff;
+  z-index: 2;
+  position: relative;
+}
+.shop-container {
+  width: 114.1rem;
+  margin: 0 auto;
+}
+.shop-title {
+  width: 114.1rem;
+  height: 7.2rem;
+  border-bottom: 1px solid #e5e5e5;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.shop-title h1 {
+  font-size: 1.4rem;
+  margin-right: auto;
+}
+.shop-title ul {
+  list-style-type: none;
+}
+.shop-title ul li {
+  display: inline-block;
+  position: relative;
+  margin-left: 1.5rem;
+}
+.shop-title ul li:not(:first-child)::before {
+  content: "/";
+  display: block;
+  height: 1.2rem;
+  width: 1.2rem;
+  position: absolute;
+  top: 0;
+  left: -1rem;
+}
+.shop-title ul li:last-child a {
+  color: #999;
+}
+.shop-category__list {
+  border: 1px solid #e5e5e5;
+}
+.shop-category__item {
+  height: 4.5rem;
+  padding: 1.1rem 2rem;
+}
+.shop-category__item:not(:first-child) {
+  border-top: 1px solid #e5e5e5;
+  text-transform: capitalize;
+  position: relative;
+}
+.shop-category__item:not(:first-child) span {
+  color: #999;
+}
+.shop-category__item:first-child {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+}
+.shop-filter h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1.7rem 0;
+  text-transform: uppercase;
 }

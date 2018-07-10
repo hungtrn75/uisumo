@@ -1,9 +1,15 @@
 header {
     height: 20.2rem;
     width: 100vw;
+    min-width: $width;
     background-color: $color-primary;
     background-size: cover;
     background-position: top;
     position: relative;
     border: none;
+
+    .wrap{
+    	background-color: $color-primary-dark;
+    	min-width: $width; 
+    }
 }
