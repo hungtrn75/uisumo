@@ -45,6 +45,10 @@
             margin-top: 2rem;
             border: $line;
         }
+
+        .item-unit:not(:last-child) {
+            border-right: $line;
+        }
     }
 
     &-unit {
@@ -60,9 +64,6 @@
                 display: -ms-flexbox;
                 display: flex;
             }
-        }
-        &:not(:last-child) {
-            border-right: $line;
         }
 
         &>.image {
@@ -88,7 +89,7 @@
         height: 3.3rem;
         width: 100%;
         left: 0;
-        bottom: 10.3rem;
+        bottom: 10.2rem;
         z-index: 3;
         border-top: $line;
         border-bottom: $line;
@@ -96,7 +97,7 @@
 
         &__unit {
             height: 100%;
-            padding: .7rem;
+            padding: .7rem 0;
             text-align: center;
 
             &:not(:last-child) {

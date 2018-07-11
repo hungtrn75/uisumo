@@ -66,28 +66,998 @@
                             </li>
                         </ul>
                     </div>
-
                     <div class="shop-filter">
-                      <h1>filter by</h1>
-                      <div class="filter-by">
-                        <h2 class="title">
-                          brands
-                        </h2>
-                        <ul class="list-type">
-                          <li class="list-type__item">
-                            <input type="checkbox" value="adcom">
-                            <label for="adcom">Adcom</label>
-                          </li>
-                          <li class="list-type__item"></li>
-                          <li class="list-type__item"></li>
-                          <li class="list-type__item"></li>
-                          <li class="list-type__item"></li>
-                          <li class="list-type__item"></li>
-                        </ul>
-                      </div>
+                        <h1>filter by</h1>
+                        <div class="filter-by" id="brands">
+                            <div class="title">
+                                <h2>brands</h2>
+                                <button class="btn btn-down"></button>
+                            </div>
+                            <ul class="list-type">
+                                <li class="list-type__item">
+                                    <input type="checkbox" value="adcom">
+                                    <label for="adcom">Adcom</label>
+                                </li>
+                                <li class="list-type__item">
+                                    <input type="checkbox" value="brillon">
+                                    <label for="brillon">Brillon</label>
+                                </li>
+                                <li class="list-type__item">
+                                    <input type="checkbox" value="datawind">
+                                    <label for="datawind">Datawind</label>
+                                </li>
+                                <li class="list-type__item">
+                                    <input type="checkbox" value="goodone">
+                                    <label for="goodone">GoodOne</label>
+                                </li>
+                                <li class="list-type__item">
+                                    <input type="checkbox" value="ismart">
+                                    <label for="ismart">I-Smart</label>
+                                </li>
+                                <li class="list-type__item">
+                                    <input type="checkbox" value="kenxinda">
+                                    <label for="kenxinda">Kenxinda</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter-by" id="price">
+                            <div class="title">
+                                <h2>price</h2>
+                                <button class="btn btn-down"></button>
+                            </div>
+                            <ul class="list-type">
+                                <li class="list-type__item">
+                                    <input type="checkbox" value="adcom">
+                                    <label for="adcom">Adcom</label>
+                                </li>
+                                <li class="list-type__item">
+                                    <input type="checkbox" value="brillon">
+                                    <label for="brillon">Brillon</label>
+                                </li>
+                                <li class="list-type__item">
+                                    <input type="checkbox" value="datawind">
+                                    <label for="datawind">Datawind</label>
+                                </li>
+                                <li class="list-type__item">
+                                    <input type="checkbox" value="goodone">
+                                    <label for="goodone">GoodOne</label>
+                                </li>
+                                <li class="list-type__item">
+                                    <input type="checkbox" value="ismart">
+                                    <label for="ismart">I-Smart</label>
+                                </li>
+                                <li class="list-type__item">
+                                    <input type="checkbox" value="kenxinda">
+                                    <label for="kenxinda">Kenxinda</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter-by" id="color">
+                            <div class="title">
+                                <h2>colour</h2>
+                                <button class="btn btn-down"></button>
+                            </div>
+                            <ul class="list-type list-color">
+                                <li class="type-color" style="background-color: #000000;">
+                                </li>
+                                <li class="type-color" style="background-color: #34aadc;">
+                                </li>
+                                <li class="type-color" style="background-color: #b0865b;">
+                                </li>
+                                <li class="type-color" style="background-color: #f7e6a1;">
+                                </li>
+                                <li class="type-color" style="background-color: #969495;">
+                                </li>
+                                <li class="type-color" style="background-color: #26dc2b;">
+                                </li>
+                                <li class="type-color" style="background-color: #fd8603;">
+                                </li>
+                                <li class="type-color" style="background-color: #f678b0;">
+                                </li>
+                                <li class="type-color" style="background-color: #f1f03f;">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter-by" id="type">
+                            <div class="title">
+                                <h2>type</h2>
+                                <button class="btn btn-down"></button>
+                            </div>
+                            <ul class="list-type">
+                                <li class="list-type__item">
+                                    <input type="checkbox" value="casual">
+                                    <label for="casual">Casual</label>
+                                </li>
+                                <li class="list-type__item">
+                                    <input type="checkbox" value="modern">
+                                    <label for="modern">Modern</label>
+                                </li>
+                                <li class="list-type__item">
+                                    <input type="checkbox" value="traditional">
+                                    <label for="traditional">Traditional</label>
+                                </li>
+                                <li class="list-type__item">
+                                    <input type="checkbox" value="vintage">
+                                    <label for="vintage">Vintage</label>
+                                </li>
+                                <li class="list-type__item">
+                                    <input type="checkbox" value="westernsStyle">
+                                    <label for="westernsStyle">Western Style</label>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="product-listing">ss</div>
+                <div class="product-listing">
+                    <div class="product-listing__main">
+                        <div class="product-listing__title">
+                            <div class="status-sort">showing 1-16 of 24 products</div>
+                            <div class="product-listing__action">
+                                <select name="item-count" id="" class="item-count">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                </select>
+                                <select name="sort" id="shop-product__sort" class="sort-type">
+                                    <option value="0">default sorting</option>
+                                    <option value="-1">A-Z</option>
+                                    <option value="1">Z-A</option>
+                                    <option value="2">price</option>
+                                    <option value="">rating</option>
+                                </select>
+                                <div class="list-view">
+                                    <button class="btn-sort btn-sort-list"></button>
+                                    <button class="btn-sort btn-sort-detail"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-listing__content">
+                            <div class="item-unit">
+                                <p class="btn-status btn-sale">Sale</p>
+                                <div class="image">
+                                    <img src="img/home/ar-1.png" alt="" class="item-image">
+                                </div>
+                                <div class="item-action">
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-shop.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-heart.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-flow.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-eye.png" alt="" class="item-action__iamge">
+                                </a>
+                                </div>
+                                <div class="item-detail u-margin-top-small">
+                                    <h3 class="hot-deal__name">Slooven Stripped T-shirt</h3>
+                                    <h3 class="hot-deal__price">$99.00</h3>
+                                    <div class="hot-deal__rate">
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-unit">
+                                <p class="btn-status btn-sale">Sale</p>
+                                <div class="image">
+                                    <img src="img/home/ar-1.png" alt="" class="item-image">
+                                </div>
+                                <div class="item-action">
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-shop.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-heart.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-flow.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-eye.png" alt="" class="item-action__iamge">
+                                </a>
+                                </div>
+                                <div class="item-detail u-margin-top-small">
+                                    <h3 class="hot-deal__name">Slooven Stripped T-shirt</h3>
+                                    <h3 class="hot-deal__price">$99.00</h3>
+                                    <div class="hot-deal__rate">
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-unit">
+                                <p class="btn-status btn-sale">Sale</p>
+                                <div class="image">
+                                    <img src="img/home/ar-1.png" alt="" class="item-image">
+                                </div>
+                                <div class="item-action">
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-shop.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-heart.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-flow.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-eye.png" alt="" class="item-action__iamge">
+                                </a>
+                                </div>
+                                <div class="item-detail u-margin-top-small">
+                                    <h3 class="hot-deal__name">Slooven Stripped T-shirt</h3>
+                                    <h3 class="hot-deal__price">$99.00</h3>
+                                    <div class="hot-deal__rate">
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-unit">
+                                <p class="btn-status btn-sale">Sale</p>
+                                <div class="image">
+                                    <img src="img/home/ar-1.png" alt="" class="item-image">
+                                </div>
+                                <div class="item-action">
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-shop.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-heart.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-flow.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-eye.png" alt="" class="item-action__iamge">
+                                </a>
+                                </div>
+                                <div class="item-detail u-margin-top-small">
+                                    <h3 class="hot-deal__name">Slooven Stripped T-shirt</h3>
+                                    <h3 class="hot-deal__price">$99.00</h3>
+                                    <div class="hot-deal__rate">
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-unit">
+                                <p class="btn-status btn-sale">Sale</p>
+                                <div class="image">
+                                    <img src="img/home/ar-1.png" alt="" class="item-image">
+                                </div>
+                                <div class="item-action">
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-shop.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-heart.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-flow.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-eye.png" alt="" class="item-action__iamge">
+                                </a>
+                                </div>
+                                <div class="item-detail u-margin-top-small">
+                                    <h3 class="hot-deal__name">Slooven Stripped T-shirt</h3>
+                                    <h3 class="hot-deal__price">$99.00</h3>
+                                    <div class="hot-deal__rate">
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-unit">
+                                <p class="btn-status btn-sale">Sale</p>
+                                <div class="image">
+                                    <img src="img/home/ar-1.png" alt="" class="item-image">
+                                </div>
+                                <div class="item-action">
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-shop.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-heart.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-flow.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-eye.png" alt="" class="item-action__iamge">
+                                </a>
+                                </div>
+                                <div class="item-detail u-margin-top-small">
+                                    <h3 class="hot-deal__name">Slooven Stripped T-shirt</h3>
+                                    <h3 class="hot-deal__price">$99.00</h3>
+                                    <div class="hot-deal__rate">
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-unit">
+                                <p class="btn-status btn-sale">Sale</p>
+                                <div class="image">
+                                    <img src="img/home/ar-1.png" alt="" class="item-image">
+                                </div>
+                                <div class="item-action">
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-shop.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-heart.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-flow.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-eye.png" alt="" class="item-action__iamge">
+                                </a>
+                                </div>
+                                <div class="item-detail u-margin-top-small">
+                                    <h3 class="hot-deal__name">Slooven Stripped T-shirt</h3>
+                                    <h3 class="hot-deal__price">$99.00</h3>
+                                    <div class="hot-deal__rate">
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-unit">
+                                <p class="btn-status btn-sale">Sale</p>
+                                <div class="image">
+                                    <img src="img/home/ar-1.png" alt="" class="item-image">
+                                </div>
+                                <div class="item-action">
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-shop.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-heart.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-flow.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-eye.png" alt="" class="item-action__iamge">
+                                </a>
+                                </div>
+                                <div class="item-detail u-margin-top-small">
+                                    <h3 class="hot-deal__name">Slooven Stripped T-shirt</h3>
+                                    <h3 class="hot-deal__price">$99.00</h3>
+                                    <div class="hot-deal__rate">
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-unit">
+                                <p class="btn-status btn-sale">Sale</p>
+                                <div class="image">
+                                    <img src="img/home/ar-1.png" alt="" class="item-image">
+                                </div>
+                                <div class="item-action">
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-shop.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-heart.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-flow.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-eye.png" alt="" class="item-action__iamge">
+                                </a>
+                                </div>
+                                <div class="item-detail u-margin-top-small">
+                                    <h3 class="hot-deal__name">Slooven Stripped T-shirt</h3>
+                                    <h3 class="hot-deal__price">$99.00</h3>
+                                    <div class="hot-deal__rate">
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-unit">
+                                <p class="btn-status btn-sale">Sale</p>
+                                <div class="image">
+                                    <img src="img/home/ar-1.png" alt="" class="item-image">
+                                </div>
+                                <div class="item-action">
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-shop.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-heart.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-flow.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-eye.png" alt="" class="item-action__iamge">
+                                </a>
+                                </div>
+                                <div class="item-detail u-margin-top-small">
+                                    <h3 class="hot-deal__name">Slooven Stripped T-shirt</h3>
+                                    <h3 class="hot-deal__price">$99.00</h3>
+                                    <div class="hot-deal__rate">
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-unit">
+                                <p class="btn-status btn-sale">Sale</p>
+                                <div class="image">
+                                    <img src="img/home/ar-1.png" alt="" class="item-image">
+                                </div>
+                                <div class="item-action">
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-shop.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-heart.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-flow.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-eye.png" alt="" class="item-action__iamge">
+                                </a>
+                                </div>
+                                <div class="item-detail u-margin-top-small">
+                                    <h3 class="hot-deal__name">Slooven Stripped T-shirt</h3>
+                                    <h3 class="hot-deal__price">$99.00</h3>
+                                    <div class="hot-deal__rate">
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-unit">
+                                <p class="btn-status btn-sale">Sale</p>
+                                <div class="image">
+                                    <img src="img/home/ar-1.png" alt="" class="item-image">
+                                </div>
+                                <div class="item-action">
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-shop.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-heart.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-flow.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-eye.png" alt="" class="item-action__iamge">
+                                </a>
+                                </div>
+                                <div class="item-detail u-margin-top-small">
+                                    <h3 class="hot-deal__name">Slooven Stripped T-shirt</h3>
+                                    <h3 class="hot-deal__price">$99.00</h3>
+                                    <div class="hot-deal__rate">
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-unit">
+                                <p class="btn-status btn-sale">Sale</p>
+                                <div class="image">
+                                    <img src="img/home/ar-1.png" alt="" class="item-image">
+                                </div>
+                                <div class="item-action">
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-shop.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-heart.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-flow.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-eye.png" alt="" class="item-action__iamge">
+                                </a>
+                                </div>
+                                <div class="item-detail u-margin-top-small">
+                                    <h3 class="hot-deal__name">Slooven Stripped T-shirt</h3>
+                                    <h3 class="hot-deal__price">$99.00</h3>
+                                    <div class="hot-deal__rate">
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-unit">
+                                <p class="btn-status btn-sale">Sale</p>
+                                <div class="image">
+                                    <img src="img/home/ar-1.png" alt="" class="item-image">
+                                </div>
+                                <div class="item-action">
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-shop.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-heart.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-flow.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-eye.png" alt="" class="item-action__iamge">
+                                </a>
+                                </div>
+                                <div class="item-detail u-margin-top-small">
+                                    <h3 class="hot-deal__name">Slooven Stripped T-shirt</h3>
+                                    <h3 class="hot-deal__price">$99.00</h3>
+                                    <div class="hot-deal__rate">
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-unit">
+                                <p class="btn-status btn-sale">Sale</p>
+                                <div class="image">
+                                    <img src="img/home/ar-1.png" alt="" class="item-image">
+                                </div>
+                                <div class="item-action">
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-shop.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-heart.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-flow.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-eye.png" alt="" class="item-action__iamge">
+                                </a>
+                                </div>
+                                <div class="item-detail u-margin-top-small">
+                                    <h3 class="hot-deal__name">Slooven Stripped T-shirt</h3>
+                                    <h3 class="hot-deal__price">$99.00</h3>
+                                    <div class="hot-deal__rate">
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-unit">
+                                <p class="btn-status btn-sale">Sale</p>
+                                <div class="image">
+                                    <img src="img/home/ar-1.png" alt="" class="item-image">
+                                </div>
+                                <div class="item-action">
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-shop.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-heart.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-flow.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-eye.png" alt="" class="item-action__iamge">
+                                </a>
+                                </div>
+                                <div class="item-detail u-margin-top-small">
+                                    <h3 class="hot-deal__name">Slooven Stripped T-shirt</h3>
+                                    <h3 class="hot-deal__price">$99.00</h3>
+                                    <div class="hot-deal__rate">
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-unit">
+                                <p class="btn-status btn-sale">Sale</p>
+                                <div class="image">
+                                    <img src="img/home/ar-1.png" alt="" class="item-image">
+                                </div>
+                                <div class="item-action">
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-shop.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-heart.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-flow.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-eye.png" alt="" class="item-action__iamge">
+                                </a>
+                                </div>
+                                <div class="item-detail u-margin-top-small">
+                                    <h3 class="hot-deal__name">Slooven Stripped T-shirt</h3>
+                                    <h3 class="hot-deal__price">$99.00</h3>
+                                    <div class="hot-deal__rate">
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-unit">
+                                <p class="btn-status btn-sale">Sale</p>
+                                <div class="image">
+                                    <img src="img/home/ar-1.png" alt="" class="item-image">
+                                </div>
+                                <div class="item-action">
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-shop.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-heart.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-flow.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-eye.png" alt="" class="item-action__iamge">
+                                </a>
+                                </div>
+                                <div class="item-detail u-margin-top-small">
+                                    <h3 class="hot-deal__name">Slooven Stripped T-shirt</h3>
+                                    <h3 class="hot-deal__price">$99.00</h3>
+                                    <div class="hot-deal__rate">
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-unit">
+                                <p class="btn-status btn-sale">Sale</p>
+                                <div class="image">
+                                    <img src="img/home/ar-1.png" alt="" class="item-image">
+                                </div>
+                                <div class="item-action">
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-shop.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-heart.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-flow.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-eye.png" alt="" class="item-action__iamge">
+                                </a>
+                                </div>
+                                <div class="item-detail u-margin-top-small">
+                                    <h3 class="hot-deal__name">Slooven Stripped T-shirt</h3>
+                                    <h3 class="hot-deal__price">$99.00</h3>
+                                    <div class="hot-deal__rate">
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-unit">
+                                <p class="btn-status btn-sale">Sale</p>
+                                <div class="image">
+                                    <img src="img/home/ar-1.png" alt="" class="item-image">
+                                </div>
+                                <div class="item-action">
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-shop.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-heart.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-flow.png" alt="" class="item-action__iamge">
+                                </a>
+                                    <a href="#" class="item-action__unit col-1-of-4">
+                                    <img src="img/home/icon-eye.png" alt="" class="item-action__iamge">
+                                </a>
+                                </div>
+                                <div class="item-detail u-margin-top-small">
+                                    <h3 class="hot-deal__name">Slooven Stripped T-shirt</h3>
+                                    <h3 class="hot-deal__price">$99.00</h3>
+                                    <div class="hot-deal__rate">
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star rated">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="img/home/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <nav aria-label="page pagination">
+                          <ul class="pagination">
+                            <li class="hide"><a href="#">
+                              <i class="pag-left"></i>
+                            </a></li>
+                            <li class="active"><a href="#">
+                              1
+                            </a></li>
+                            <li><a href="#">
+                              2
+                            </a></li>
+                            <li><a href="#">
+                              3
+                            </a></li>
+                            <li><a href="#">
+                              <i class="pag-right"></i>
+                            </a></li>
+                          </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

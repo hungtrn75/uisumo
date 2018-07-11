@@ -111,4 +111,59 @@
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
     }
+
+    &-down{
+        background: transparent url(../img/home/icon/btn-down.png) 50% 50% no-repeat;
+        position: absolute;
+        background-size: 1rem.6rem;
+        display: inline-block;
+        top: 1.2rem;
+        right: 1.2rem;
+        height: 2rem;
+        width: 2rem;
+        border: none;
+    }
+
+    &-sort{
+        height: 3.4rem;
+        width: 3.6rem;
+
+        &:hover, &:active{
+            background-color: $color-grey-dark-3;
+        }
+
+        &-list{
+            background: url(../img/home/icon/btn-list.png) 50% 50% no-repeat;
+            background-size: 1.6rem 1.2rem;
+        }
+
+        &-detail{
+            background: url(../img/home/icon/btn-detail.png) 50% 50% no-repeat;
+            background-size: 1.6rem 1.3rem;
+        }
+    }
+}
+
+.active{
+    background-color: $color-black;
+
+    &>*{color: $color-white;};
+}
+
+.hide {display: none!important}
+
+.pag-left{
+    background: url(../img/home/move-left.png) no-repeat;
+    background-size: .6rem .9rem;
+    display: inline-block;
+    height: .9rem;
+    width: .6rem;
+}
+
+.pag-right{
+    background: url(../img/home/move-right.png) no-repeat;
+    background-size: .6rem .9rem;
+    display: inline-block;
+    height: .9rem;
+    width: .6rem;
 }

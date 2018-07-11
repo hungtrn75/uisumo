@@ -66,11 +66,33 @@
 
     &-content {
         width: 61rem;
-        padding: 1.5rem 2.5rem;
+        padding: 0 2.5rem;
         -ms-flex-pack: distribute;
         -webkit-justify-content: space-around;
         justify-content: space-around;
         margin-right: auto;
+    }
+
+    &-item{
+        align-self: stretch;
+        padding: 1.8rem 0;
+        position: relative;
+        transition: all .2s;
+
+        &::before{
+            display: none;
+            content: "";
+            height: 2px;
+            width: 100%;
+            background-color: $color-white;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &:hover::before{
+            display: inline-block;
+        }
     }
 
     &-contact {

@@ -1,0 +1,89 @@
+.product-listing {
+    &__title {
+        height: 3.6rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+
+        &>.status-sort{
+        	margin-right: auto;
+        }
+
+        margin-bottom: 2.4rem;
+    }
+
+    &__action{
+    	display: flex;
+    	
+    	.item-count{
+    		width: 5.5rem;
+    		height: 3.4rem;
+    		background-position:  3.1rem 1.1rem;
+
+    	}
+
+    	.sort-type{
+    		width: 15.4rem;
+    		height: 3.4rem;
+    		background-position:  13rem 1.1rem;
+    	}
+
+    	select{
+    		border: $line;
+    		padding: 0 1.2rem;
+    		-webkit-appearance: none;
+               -moz-appearance: none;
+                    appearance: none;
+    		background: url(../img/home/br_down.png) no-repeat;
+    		background-size: 1rem;
+    		margin-right: 1rem;
+    		text-transform: uppercase;
+    		font-size: 1.2rem;
+    	}
+
+    	.list-view{
+    		height: 3.4rem;
+    		border: $line;
+
+    		button:first-child{
+    			border-right: $line;
+    		}
+    	}
+    }
+
+    &__content{
+    	display: flex;
+    	flex-wrap: wrap;
+    	border: $line;
+
+    	.item-unit{
+    		border: $line-2;
+    	}
+    }
+
+    .pagination{
+    	list-style-type: none;
+    	text-align: center;
+    	margin-top: 2.8rem;
+    	margin-bottom: 6.8rem;
+
+    	&>li{
+    		display: inline-block;
+
+    		height: 3rem;
+    		width: 3rem;
+    		border: $line;
+    		padding: .5rem 0;
+    		margin: 0 .2rem;
+
+    		&:not(.disabled){
+    			cursor: pointer;
+    		}
+
+    		&:not(.active):hover{
+    			background-color: $color-grey-dark-3;
+    		}
+    	}
+    }
+}
