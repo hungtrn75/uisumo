@@ -695,7 +695,7 @@ body {
   height: 3.4rem;
   width: 3.6rem;
 }
-.btn-sort:hover, .btn-sort:active {
+.btn-sort:hover, .btn-sort:visited {
   background-color: #eeeeee;
 }
 .btn-sort-list {
