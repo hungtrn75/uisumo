@@ -1,3 +1,11 @@
-.navigation {
-    
+.main-container{
+	width: 100%;
+	position: relative;
+	background-color: $color-white;
+	z-index: 2;
+}
+
+.main-content{
+	width: $width;
+	margin: 0 auto;
 }

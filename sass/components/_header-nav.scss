@@ -86,7 +86,7 @@
             width: 100%;
             background-color: $color-white;
             position: absolute;
-            top: 0;
+            bottom: 0;
             left: 0;
         }
 
@@ -127,6 +127,10 @@
         &__category {
             width: 27rem;
             background-color: $color-white;
+
+            &:hover{
+                z-index: 3;
+            }
         }
 
         &__list {
@@ -238,6 +242,10 @@
                 display: flex;
             }
         }
+
+        &:hover{
+            z-index: 3;
+        }
     }
 
     &-content:hover~&-menu &-menu__mega {
@@ -245,5 +253,9 @@
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
+    }
+
+    .department-link:hover~&-menu{
+        z-index: 3;
     }
 }

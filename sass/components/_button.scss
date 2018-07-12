@@ -43,7 +43,7 @@
     &-add {
         width: 10.1rem;
 
-        &-product{
+        &-product {
             display: inline-block;
             height: 2.2rem;
             width: 2.2rem;
@@ -68,14 +68,14 @@
         margin-top: 1.8rem;
     }
 
-    &-more{
+    &-more {
         text-transform: uppercase;
         font-size: 1.4rem;
         color: $color-primary;
         text-decoration: none;
         position: relative;
 
-        &::after{
+        &::after {
             content: "";
             display: none;
             position: absolute;
@@ -84,17 +84,17 @@
             background: url(../img/home/move-right.png) 50% 40% no-repeat;
         }
 
-        &:hover::after{
+        &:hover::after {
             display: inline;
         }
     }
 
-    &:hover{
+    &:hover {
         -webkit-box-shadow: $shadow-box;
-                box-shadow: $shadow-box;
+        box-shadow: $shadow-box;
     }
 
-    &-email{
+    &-email {
         height: 4.6rem;
         width: 10rem;
         background-color: $color-secondary-light;
@@ -112,7 +112,7 @@
         border-bottom-right-radius: 3px;
     }
 
-    &-down{
+    &-down {
         background: transparent url(../img/home/icon/btn-down.png) 50% 50% no-repeat;
         position: absolute;
         background-size: 1rem.6rem;
@@ -124,35 +124,41 @@
         border: none;
     }
 
-    &-sort{
+    &-sort {
         height: 3.4rem;
         width: 3.6rem;
 
-        &:hover, &:visited{
+        &:hover,
+        &:visited {
             background-color: $color-grey-dark-3;
         }
 
-        &-list{
+        &-list {
             background: url(../img/home/icon/btn-list.png) 50% 50% no-repeat;
             background-size: 1.6rem 1.2rem;
         }
 
-        &-detail{
+        &-detail {
             background: url(../img/home/icon/btn-detail.png) 50% 50% no-repeat;
             background-size: 1.6rem 1.3rem;
         }
     }
 }
 
-.active{
+.active {
     background-color: $color-black;
 
-    &>*{color: $color-white;};
+    &>* {
+        color: $color-white;
+    }
+    ;
 }
 
-.hide {display: none!important}
+.hide {
+    display: none!important
+}
 
-.pag-left{
+.pag-left {
     background: url(../img/home/move-left.png) no-repeat;
     background-size: .6rem .9rem;
     display: inline-block;
@@ -160,10 +166,40 @@
     width: .6rem;
 }
 
-.pag-right{
+.pag-right {
     background: url(../img/home/move-right.png) no-repeat;
     background-size: .6rem .9rem;
     display: inline-block;
     height: .9rem;
     width: .6rem;
+}
+
+.status{
+    &-hot::after, &-new::after {
+        font-size: 1.1rem;
+        font-family: "Raleway";
+        font-weight: 400;
+        text-align: center;
+        color: $color-white;
+        
+        -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 75%, 51% 75%, 38% 100%, 24% 75%, 0% 75%);
+        clip-path: polygon(0% 0%, 100% 0, 100% 75%, 51% 75%, 38% 100%, 24% 75%, 0% 75%);
+        height: 2.3rem;
+        width: 3.9rem;
+        position: absolute;
+        top: -1rem;
+        right: 0px;
+        display: inline-block;
+        padding: .1rem;
+    }
+
+    &-hot::after{
+        content: "HOT";
+        background-color: $color-hot;
+    }
+
+    &-new::after{
+        content: "NEW";
+        background-color: $color-new;
+    }
 }
