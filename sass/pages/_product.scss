@@ -1,6 +1,126 @@
-.product{
-	color: $color-black;
-	font-size: 1.2rem;
-	font-family: "Raleway";
-	font-weight: 500;
+.product {
+    color: $color-black;
+    font-size: 1.2rem;
+    font-family: "Roboto";
+    font-weight: 500;
+
+    &-detail {
+        width: 52.5rem;
+    }
+
+    &-title {
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 2.4rem;
+    }
+
+    .gallery-preview {
+        &__panel {
+            position: relative;
+            border: $line;
+
+            &-image {
+                background-size: cover;
+                width: 56.6rem;
+            }
+        }
+    }
+}
+
+.module {
+    &-item__gallery {
+        width: 57rem;
+        margin-right: auto;
+    }
+    &-product {
+        &__review {
+            display: flex;
+
+            &-star {
+                margin-right: .6rem;
+            }
+        }
+
+        &__price {
+            font-size: 1.8rem;
+            font-weight: 600;
+
+            &-normal {
+                color: $color-grey-dark;
+                text-decoration: line-through;
+            }
+        }
+
+        &__snippet {
+            padding: 1rem 0;
+        }
+
+        &__promotion {
+            list-style-image: url(../img/home/icon/icon-dot.png);
+            list-style-position: inside;
+            padding: 1.6rem;
+            border: $line;
+        }
+    }
+}
+
+.next-slick {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.8rem;
+    height: 13.6rem;
+
+    &-list {
+        border: $line;
+
+        &:hover,
+        &:focus {
+            border: $line-orange;
+        }
+    }
+
+    .item-gallery__image-wrapper {
+        width: 12.5rem;
+    }
+}
+
+.number-picker{
+    width: 7.7rem;
+    border: $line;
+    outline: none;
+    margin: 1.8rem 0;
+    position: relative;
+
+	&__handler{
+		&-wrap{
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 4.6rem;
+			width: 2.4rem;
+			font-size: 1.6rem;
+			text-align: center;
+			border-left: $line;
+		}
+		&-up,&-down{
+			display: block;
+			height: 2.3rem;	
+			
+	        &:hover, &:focus{
+	            box-shadow: $shadow-box;
+	            background-color: $color-grey-light-2;
+	        }
+		}
+
+		&-up{
+			border-bottom: $line;
+		}
+	}
+
+    &__input>input{
+    	height: 4.6rem;
+    	width: 7.5rem;
+    	padding: 1.5rem;
+    	font-weight: 600;
+    }
 }
